@@ -77,7 +77,6 @@ h1{
     background-color: aqua;
     border-radius: 15px;
     max-width: 500px;
-    min-width: 200px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -90,7 +89,6 @@ h1{
     background-color: aqua;
     border-radius: 15px;
     max-width: 500px;
-    min-width: 200px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -120,9 +118,10 @@ h1{
 }
 
 .container_video{
+    width: 100%;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;
 }
 
 footer{
@@ -172,25 +171,35 @@ footer{
         width: auto;
     }
 
+    .navbar li{
+        flex-wrap: wrap;
+    }
+
     .container_img{
         flex-wrap: wrap;
     }
- }
 
- @media screen and (max-width: 700px) {
+    h1{
+        width: 100%;
+    }
 
     .container_img img{
         width: 70%;
         height: auto;
     }
 
-    .container_video{
-        width: 90%;
+    .container_description{
+        width: 40%;
+    }
+
+    .container_rating {
+        width: 40%;
     }
 
     .container_video video{
-
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        width: 80%;
         height: auto;
     }
 
